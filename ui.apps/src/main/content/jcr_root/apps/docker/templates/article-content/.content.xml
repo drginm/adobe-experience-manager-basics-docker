@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Template with focus on articles."
+    jcr:primaryType="cq:Template"
+    jcr:title="Docker article content page"
+    allowedPaths="[/content/docker/.+]"
+    ranking="{Long}99">
+    <jcr:content
+        cq:lastModified="{Date}2018-04-29T11:39:33.956-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/docker/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Article"
+        sling:resourceType="docker/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="docker/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="docker/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="docker/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <video
+                jcr:created="{Date}2018-04-29T11:35:09.657-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-04-29T11:35:09.657-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="docker/components/content/video"/>
+            <text
+                jcr:lastModified="{Date}2018-04-29T11:38:53.129-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="docker/components/content/text"
+                text="&lt;p>This is small description of the article (no more than two lines long)&lt;br>&#xa;&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <text_226285490
+                jcr:created="{Date}2018-04-29T11:39:27.203-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-04-29T11:39:33.953-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="docker/components/content/text"
+                text="&lt;p>This is a more descriptive text about the article&lt;/p>&#xa;"
+                textIsRich="true"/>
+        </par>
+    </jcr:content>
+</jcr:root>
